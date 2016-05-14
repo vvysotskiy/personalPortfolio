@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div id="menu" class="row navbar-fixed-top" style="">
+    <ul class="menu-item list-unstyled list-inline">
+        <li>
+            <a id="about" href="index.html">about</a>
+        </li>
+        <li style="margin-left: 25px; margin-right: 25px">
+            <a id="resume" href="resume.html">resume</a>
+        </li>
+        <li>
+            <a id="work" href="work.html">work</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+
+<script>
+
+    $(function () {
+        var pgurl = window.location.href.substr(window.location.href
+                .lastIndexOf("/") + 1);
+        $("#menu ul li a").each(function () {
+            if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+                $(this).addClass("active");
+        })
+    });
+</script>
+
+</html>
