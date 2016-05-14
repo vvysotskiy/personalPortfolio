@@ -70,6 +70,11 @@
     text-transform: uppercase;
 }
 
+#avatar {
+    float: left;
+}
+
+
 @media screen and (max-width: 1920px) {
     .container {
         width: 1170px;
@@ -195,6 +200,10 @@
         font-size: 28px
     }
 
+    .paragraph-caption {
+        font-size: 15px;
+    }
+
     .section-description {
         font-size: 18px;
         line-height: 1.45;
@@ -232,6 +241,10 @@
         width: 100%;
     }
 
+    .paragraph-caption {
+        font-size: 15px;
+    }
+
     .section-description {
         font-size: 17px;
         line-height: 1.45;
@@ -263,6 +276,10 @@
 
     .caption-addition {
         font-size: 13px;
+    }
+
+    #avatar {
+        display: none;
     }
 }
 
@@ -329,7 +346,4 @@ td {
     margin-top: 42px;
 }
 
-#avatar {
-    float: left;
-}
 
