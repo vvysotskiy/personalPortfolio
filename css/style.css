@@ -233,6 +233,8 @@
         font-size: 15px;
     }
 
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -279,6 +281,10 @@
     }
 
     #avatar {
+        display: none;
+    }
+
+    .project-img-container {
         display: none;
     }
 }
@@ -346,4 +352,12 @@ td {
     margin-top: 42px;
 }
 
+.project-img {
+    height: 25%;
+    width: 25%;
+}
 
+.project-container {
+    display: flex;
+    align-items: center;
+}
